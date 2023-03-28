@@ -1,0 +1,16 @@
+.Navbar {
+  background-color: cadetblue;
+  display: flex;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      list-style-type: none;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
