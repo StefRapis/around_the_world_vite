@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link to="city/:id">Cities</Link>
         </li>
         <li>
-          <Link to="activity/:id">Activities</Link>
+          <Link to="activities">Activities</Link>
         </li>
       </ul>
     </div>

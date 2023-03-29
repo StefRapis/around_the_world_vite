@@ -1,0 +1,30 @@
+.Card {
+  // border: 2px solid yellow;
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  width: 400px;
+  box-shadow: 0px 10px 40px -3px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(0.9);
+    transition: 0.35s;
+  }
+
+  .image {
+    img {
+      width: 100px;
+      padding: 40px 10px 0 40px;
+    }
+  }
+
+  .info {
+    padding: 10px 30px;
+    .title {
+    }
+    .description {
+    }
+    .price {
+    }
+  }
+}

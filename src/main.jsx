@@ -11,7 +11,18 @@ Strutturare una navbar e un footer
 Musement API: https://api.musement.com/api/v3/activities.json
 
 Avanzato
-Leggere un pò di documentazione https://reactrouter.com/en/main/start/overview */
+Leggere un pò di documentazione https://reactrouter.com/en/main/start/overview 
+
+// -----------------------------------------------------------------------------------------------------------------------------
+
+29-3-2023
+Esercizio 1
+Sulla base della lezione del giorno, replicare quanto visto a lezione, creando una pagina statica che renderizzi una lista di prodotti, al cui click rimandi alla pagina dinamica con maggiori informazioni sul prodotto selezionato.
+
+API: https://fakestoreapi.com/products
+
+Avanzato
+Tentare l'applicazione dello stesso principio utilizzando però questa api: https://failteireland.portal.azure-api.net/docs/services/opendata-api-v1/operations/attractions-get? */
 
 import React from "react";
 import "./index.css";
@@ -24,17 +35,20 @@ import {
 } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 
+import PrimaryLayout from "./layout/PrimaryLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Activity from "./pages/Activity";
+import Activities from "./pages/activities";
+import Activity from "./pages/activities/id";
 import City from "./pages/City";
 
 const router = createBrowserRouter(
   // perche scriviamo in jsx dobbiamo aggiungere il metodo "createRoutesFromElements"
   createRoutesFromElements(
-    <Route>
+    <Route element={<PrimaryLayout />}>
       <Route path="/" element={<Home />} />
-      <Route path="activity/:id" element={<Activity />} />
+      <Route path="activities" element={<Activities />} />
+      <Route path="activities/:id" element={<Activity />} />
       <Route path="city/:id" element={<City />} />
       <Route path="about" element={<About />} />
     </Route>

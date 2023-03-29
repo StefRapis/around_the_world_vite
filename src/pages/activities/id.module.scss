@@ -1,0 +1,22 @@
+.Activity {
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+
+  .image {
+    img {
+      width: 300px;
+    }
+  }
+
+  .info {
+    .title {
+    }
+    .description {
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}
