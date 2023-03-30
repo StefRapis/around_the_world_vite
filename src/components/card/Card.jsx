@@ -11,16 +11,12 @@ const Card = ({ data }) => {
   return (
     <div className={styles.Card} onClick={openItem}>
       <div className={styles.image}>
-        <img src={data.image} alt={data.title} />
+        <img src={data.cover_image_url} alt={data.city.name} />
       </div>
       <div className={styles.info}>
-        <h2 className={styles.title}>
-          {data.title.split(" ").splice(0, 3).join(" ")}
-        </h2>
-        <p className={styles.description}>
-          {data.description.substring(0, 50)}
-        </p>
-        <p className={styles.price}>{data.price} Euro</p>
+        <h2 className={styles.title}>{data.city.name}</h2>
+        <p>{data.city.time_zone}</p>
+        <p className={styles.description}>{data.description}</p>
       </div>
     </div>
   );
