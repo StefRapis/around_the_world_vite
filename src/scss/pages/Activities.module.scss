@@ -2,11 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0px;
 
   .location {
     margin-bottom: 40px;
   }
   span {
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Activities {
+    // border: 2px solid red;
   }
 }

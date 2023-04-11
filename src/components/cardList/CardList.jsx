@@ -4,10 +4,11 @@ import Card from "../card";
 const CardList = ({ data }) => {
   return (
     <div className={styles.CardList}>
-      {!!data && <p>La cittá cercata non é disponibile</p>}
+      {/* <h2>Dai un'occhiata alle destinazioni piú popolari:</h2> */}
+      {/* {!!data && <p>La cittá cercata non é disponibile</p>} */}
 
       {data.map((item) => (
-        <Card data={item} key={item.id} />
+        <Card data={item} key={item.uuid} />
       ))}
     </div>
   );

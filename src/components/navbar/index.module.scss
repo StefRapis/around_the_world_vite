@@ -1,13 +1,18 @@
+@import "../../scss/variables/colours";
+
 .Navbar {
-  background-color: cadetblue;
+  background-color: transparent;
+
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
+  padding: 20px 0;
+  width: 100vw;
 
   ul {
     list-style: none;
     display: flex;
-    gap: 70px;
+    gap: 50px;
     padding: 0;
 
     li {
@@ -15,7 +20,24 @@
 
     li a {
       text-decoration: none;
-      color: white;
+      color: $dark;
+      font-family: 400;
+
+      &:hover {
+        text-decoration: underline;
+        color: $accent-green;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Navbar {
+    margin-top: 20px;
+    ul {
+      gap: 20px;
+      li a {
+      }
     }
   }
 }

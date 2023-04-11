@@ -1,2 +1,95 @@
 .About {
+  padding: 100px 250px 10px 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  .section {
+    display: flex;
+
+    .text {
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        width: 90%;
+      }
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+  .section2 {
+    display: flex;
+    // border: 2px solid red;
+    gap: 30px;
+
+    .text2 {
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        width: 90%;
+      }
+    }
+
+    img {
+      // border: 2px solid red;
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      object-fit: cover;
+
+      // box-shadow: 0px 17px 29px 7px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .About {
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 180px;
+
+    .section,
+    .section2 {
+      flex-direction: column;
+      gap: 30px;
+
+      .text,
+      .text2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+          width: 90%;
+          //   text-align: center;
+        }
+      }
+      .text2 {
+        // flex-direction: column-reverse;
+      }
+
+      img {
+      }
+    }
+  }
 }

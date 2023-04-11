@@ -16,15 +16,27 @@ export default function Home() {
 
   return (
     <div className={styles.Home}>
-      <div className={styles.form}>
-        <label htmlFor="location">Dove vuoi andare?</label>
-        <input
-          type="text"
-          name="location"
-          value={input}
-          onChange={setLocation}
-        />
-        <button onClick={onHandleClick}>Vai</button>
+      <div className={styles.container}>
+        <div className={styles.hero}>
+          <h1>
+            <span>Dove</span> ti porterá il tuo <span>istinto</span> questa
+            volta?
+          </h1>
+        </div>
+        <div className={styles.form}>
+          {/* <label htmlFor="location">Dove vuoi andare?</label> */}
+          <input
+            type="text"
+            name="location"
+            placeholder="Prova Londra, o Miami! "
+            value={input}
+            onChange={setLocation}
+          />
+          <button onClick={onHandleClick}>GO!</button>
+        </div>
+        <div className={styles.imagediv}>
+          <img src="./4229858.jpg" alt="explorer" />
+        </div>
       </div>
     </div>
   );

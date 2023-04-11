@@ -5,7 +5,7 @@ const Card = ({ data }) => {
   const navigate = useNavigate();
 
   const openItem = () => {
-    navigate(`${data.id}`);
+    navigate(`${data.uuid}`);
   };
 
   return (
